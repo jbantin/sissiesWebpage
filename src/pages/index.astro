@@ -1,0 +1,33 @@
+---
+import Header from "../components/Header.astro";
+import News from "../components/News.astro";
+import Dates from "../components/Dates.astro";
+import Releases from "../components/Releases.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Astro</title>
+  </head>
+  <body>
+    <header>
+      <Header />
+    </header>
+    <main class="grid gap-4 md:grid-cols-[66%,1fr]">
+      <section class="dates">
+        <Dates />
+      </section>
+      <section class="news">
+        <News />
+      </section>
+	  <section class="releases">
+		<Releases/>
+	  </section>
+    </main>
+  </body>
+</html>

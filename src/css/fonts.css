@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'bebas';
+    src: url(/fonts/BebasNeue-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'danfo';
+    src: url(/fonts/Danfo-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
