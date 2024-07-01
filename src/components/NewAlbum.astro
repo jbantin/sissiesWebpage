@@ -1,0 +1,45 @@
+---
+import cockroachPic from "../assets/img/Sissies_CockroachSwing_soundsofsubterrania-600x600.jpeg";
+import protestLive from "../assets/audio/Nachtasyl_Protest.mp3";
+---
+<div>
+    <img src={cockroachPic.src} alt="cockroach swing album art">
+    <h1 class="flex justify-between">Cockroach Swing <a href="https://shop.soundsofsubterrania.com/en/product/sissies-cockroach-swing/" target="_blank" self-right>buy</a></h1>
+    <h3>Album</h3>
+    <h3>Release: 2024</h3>
+    <h3>Label: Waxlife</h3>
+    <h3 class="flex justify-between">Protest Live<audio controls src={protestLive}></audio></h3>
+</div>
+<video controls src=""></video>
+<style>
+    h1 {
+        font-size:1.5rem;
+    }
+    h1,h3 {
+        font-weight: 600;
+    }
+    div{
+        
+        color:white;
+        padding:4rem;
+        display:flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: space-between;
+    }
+    img {
+        transition-duration: 0.4s;
+        margin-bottom:1.5rem;
+        width:100%;
+        
+    }
+    img:hover {
+        scale: 1.05;
+    }
+    audio {
+        color:white;
+        width:60%;
+        height:1.4rem;
+        border-radius:1rem;
+    }
+</style>
