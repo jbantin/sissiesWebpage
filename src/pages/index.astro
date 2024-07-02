@@ -2,7 +2,7 @@
 import Header from "../components/Header.astro";
 import News from "../components/News.astro";
 import Dates from "../components/Dates.astro";
-import Releases from "../components/Releases.astro";
+import Releases from "../components/disko.astro";
 import Footer from "../components/Footer.astro";
 import NewAlbum from "../components/NewAlbum.astro";
 ---
@@ -20,12 +20,12 @@ import NewAlbum from "../components/NewAlbum.astro";
     <header>
       <Header />
     </header>
-    <main class="grid grid-cols-1 md:grid-cols-[33%,1fr] gap-20">
+    <main class="grid grid-cols-1 md:grid-cols-[33%,1fr] ">
       <section class="new-album md:col-start-2 md:row-start-1 ">
         <NewAlbum />
         <!-- <Releases/> -->
       </section>
-
+      
       <section class="news md:row-span-3 col-start-1">
         <News />
       </section>

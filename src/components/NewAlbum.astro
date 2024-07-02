@@ -5,12 +5,14 @@ import cockroachVid from "../assets/cockroach.mp4";
 ---
 <div>
     <img src={cockroachPic.src} alt="cockroach swing album art">
-    <h1 class="flex justify-between">Cockroach Swing <a href="https://shop.soundsofsubterrania.com/en/product/sissies-cockroach-swing/" target="_blank" self-right>buy</a></h1>
+    <span id="media" class="relative -top-32"></span>
+    <h1  class="flex justify-between">Cockroach Swing <a href="https://shop.soundsofsubterrania.com/en/product/sissies-cockroach-swing/" target="_blank" self-right>buy</a></h1>
     <h3>Album</h3>
     <h3>Release: 2024</h3>
     <h3>Label: Waxlife</h3>
     <h3 class="flex justify-between">Protest Live<audio controls src={protestLive}></audio></h3>
     <h1 class="mt-20 self-center">COCKROACH SWING</h1>
+    
     <video class="mt-4" controls src={cockroachVid}></video>
 </div>
 
@@ -37,12 +39,18 @@ import cockroachVid from "../assets/cockroach.mp4";
         
     }
     img:hover {
-        scale: 1.05;
+        scale: 1.02;
     }
     audio {
         color:white;
         width:60%;
         height:1.4rem;
         border-radius:1rem;
+    }
+    a {
+        transition-duration: 0.5s;
+    }
+    a:hover {
+        scale:1.5;
     }
 </style>

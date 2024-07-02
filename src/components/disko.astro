@@ -1,0 +1,114 @@
+---
+import cockroachPic from "../assets/img/Sissies_CockroachSwing_soundsofsubterrania-600x600.jpeg";
+import burnhardPic from "../assets/img/burnhard-bahamas.jpg";
+import fixedPic from "../assets/img/fixed.jpg";
+import singlePic from "../assets/img/sissies-single.jpg";
+import splitPic from "../assets/img/sissies-smokeblow-payola-split.jpg";
+import juicePic from "../assets/img/the-juice-cover.jpeg";
+import protestLive from "../assets/audio/Nachtasyl_Protest.mp3";
+---
+
+<section class="releases flex overflow-x-auto w-1/2 mt-32 ml-auto mr-auto md:w-1/3 xl:w-1/4 scroll-smooth">
+  <div id="cockroach">
+    <img src={cockroachPic.src} alt="cockroach swing album art" />
+    <h1 class="flex justify-between">
+      Cockroach Swing <a
+        href="https://shop.soundsofsubterrania.com/en/product/sissies-cockroach-swing/"
+        target="_blank"
+        self-right>buy</a
+      >
+    </h1>
+    <h3>Album</h3>
+    <h3>Release: 2024</h3>
+    <h3>Label: Waxlife</h3>
+    <h3 class="flex justify-between">
+      Protest Live<audio controls src={protestLive}></audio>
+    </h3>
+  </div>
+  <div id="juice">
+    <img src={juicePic.src} alt="juice album art" />
+    <h1>The Juice</h1>
+    <h3>Album</h3>
+    <h3>Release: 2003</h3>
+    <h3>Label: Daredevil Records</h3>
+  </div>
+  <div id="burnhard">
+    <img src={burnhardPic.src} alt="burnhard bahamas album art" />
+    <h1>Greetings from Burnhard Bahamas</h1>
+    <h3>Album</h3>
+    <h3>Release: 2000</h3>
+    <h3>Label: Bonanza</h3>
+  </div>
+  <div id="split">
+    <img src={splitPic.src} alt="split single album art" />
+    <h1>The Good the Bad & the Ugly</h1>
+    <h3>split 10 inch</h3>
+    <h3>Release: 1999</h3>
+    <h3>Label: Loudsprecher</h3>
+  </div>
+  <div id="single">
+    <img src={singlePic.src} alt="single album art" />
+    <h1>Sniffing Glue and dancing with Lucie</h1>
+    <h3>7 inch</h3>
+    <h3>Release: 1998</h3>
+    <h3>Label: False Insight Records</h3>
+  </div>
+  <div id="fixed">
+    <img src={fixedPic.src} alt="fixed album art" />
+    <h1>Fixed</h1>
+    <h3>Album</h3>
+    <h3>Release: 1997</h3>
+    <h3>Label: Dependent Records</h3>
+  </div>
+</section>
+<section class="nav">
+    <a href="#cockroach"><img src={cockroachPic.src} alt=""></a>
+    <a href="#juice"><img src={juicePic.src} alt=""></a>
+    <a href="#burnhard"><img src={burnhardPic.src} alt=""></a>
+    <a href="#split"><img src={splitPic.src} alt=""></a>
+    <a href="#single"><img src={singlePic.src} alt=""></a>
+    <a href="#fixed"><img src={fixedPic.src} alt=""></a>
+</section>
+<style>
+  h1 {
+    font-size: 1.5rem;
+  }
+  h1,
+  h3 {
+    font-weight: 600;
+  }
+  div {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-between;
+  }
+  img {
+    transition-duration: 0.4s;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  
+  audio {
+    color: white;
+    width: 60%;
+    height: 1.4rem;
+    border-radius: 1rem;
+  }
+  .nav {
+    margin-left:auto;
+    margin-right:auto;
+    gap: 0.2rem;
+    width:50%;
+    display:flex;
+  }
+  .nav a{
+    flex-basis: calc(100%/6);
+  }
+</style>
