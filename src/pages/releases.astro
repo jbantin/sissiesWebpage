@@ -1,6 +1,7 @@
 ---
 import Disko from "../components/disko.astro";
 import logo from "../assets/img/logo.jpg";
+import HeaderSmall from "../components/HeaderSmall.astro";
 ---
 <html lang="en">
 	<head>
@@ -12,14 +13,12 @@ import logo from "../assets/img/logo.jpg";
 	</head>
     <body class="bg-black">
         <header>
-            <div class="py-2 z-50 fixed left-0 right-0 top-0 h-28 bg-black flex justify-between px-4 items-center">
-                <img src={logo.src} alt="" class="h-full ">
-                <a href="/" class="text-white text-xl">Main</a>
-            </div>
-            <a href="/">Main</a>
+            <HeaderSmall/>
         </header>
         <main>
             <Disko/>
+            <h1 class="fixed text-white font-bold bottom-4 left-4"> <a href="/gal">Gallery</a></h1>
+            <h1 class="fixed text-white font-bold bottom-4 right-4"> <a href="/contact">Contact</a></h1>
         </main>
         <footer></footer>
     </body>

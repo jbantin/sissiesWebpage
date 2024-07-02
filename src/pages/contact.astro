@@ -1,0 +1,56 @@
+---
+import HeaderSmall from "../components/HeaderSmall.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-black">
+    <header><HeaderSmall /></header>
+    <main>
+      <section
+        class="comment text-white mt-40 w-[60%] mr-auto ml-auto md:w-1/2 lg:w-1/3"
+      >
+        <form action="#" method="post" class="flex flex-col gap-2">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            placeholder="John Sacklinski"
+            id="name"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="john@sacklinski.com"
+          />
+          <label for="text">comment</label>
+          <textarea name="text" id="text" rows="5" cols="45"></textarea>
+          <label for="newsletter"
+            >Newsletter
+            <input type="checkbox" name="newsletter" id="newsletter" />
+          </label>
+
+          <button type="submit">send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+        <h1 class="fixed text-white font-bold bottom-2 left-2"> <a href="/releases">Releases</a></h1>
+<h1 class="fixed text-white font-bold bottom-2 right-2"> <a href="/gal">Gallery</a></h1>
+    </footer>
+  </body>
+</html>
+<style>
+  input,
+  textarea {
+    background: none;
+    border-bottom: 2px solid white;
+  }
+</style>
