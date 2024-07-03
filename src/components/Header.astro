@@ -4,8 +4,9 @@ import "../css/fonts.css"
 ---
 
     <div class="py-2 z-50 fixed left-0 right-0 top-0 h-28 bg-black flex justify-between px-4">
-        <img src={logo.src} alt="" class="h-full ">
-        <ul class="mr-12 text-xl hidden text-white md:flex justify-evenly gap-3 items-center font-black font-['bebas']">
+        <a href="/"><img src={logo.src} alt="sissies logo" class="h-full "></a>
+        <ul class="mr-12 text-xl hidden text-white md:flex justify-around gap-3 items-center font-black font-['bebas']">
+            <li><a href="#dates">Dates</a></li>
             <li><a href="/gal">Gallery</a></li>
             <li><a href="#media">Media</a></li>
             <li><a href="/releases">Releases</a></li>
@@ -17,7 +18,7 @@ import "../css/fonts.css"
             type="checkbox">
             <svg  class="text-white w-6 h-6" viewBox="0 0 448 512"><path fill="currentColor"
                 d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-            <div class="nav transition-all duration-400 ease-in-out w-24  bg-white flex flex-col absolute top-20 right-[-8rem] peer-checked:right-0">
+            <div class="nav transition-all duration-[1s] ease-in-out w-40 h-[70vh] bg-black flex flex-col justify-around absolute top-20 right-[-12rem] text-white  peer-checked:-right-4">
                 <a href="#news">News</a>
                 <a href="#dates">Dates</a>
                 <a href="/gal">Gallery</a>
@@ -31,20 +32,23 @@ import "../css/fonts.css"
             .nav {
                 padding: 0.5rem;
                 text-align: right;
-                background-color:#e3e3e3;
+                background-color: rgba(0,00,00,0.8);
+                /* background-color:#e3e3e3; */
             }
-            a {
-                
+            .nav a {
+                padding:7%;
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
               
                 
                
                 font-weight:500;
-                border-bottom:1px solid black;
+                border-bottom:1px solid white;
             }
-            a:hover{
+            .nav a:hover{
                 font-weight: 900;
-                border-bottom:2px solid black;
+                color:black;
+                background:white;
+                opacity: 1;
             }
         </style>
     
