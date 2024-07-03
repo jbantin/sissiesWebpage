@@ -5,7 +5,28 @@
     <rect class="line bottom" width="80" height="10" x="10" y="65"></rect>
   </svg>
 </div>
+<div class=" bg-green-700">
+  <svg class="hamburger-two" fill="none" viewBox="0 0 100 100" width="64">
+    <path 
+      class="line"
+      stroke="black" 
+      stroke-width="10" 
+      d="M 15 20 H 85 A 1 1 0 0 0 85 50 h -70 A 1 2 0 0 0 15 80 h 70 A 3 -2 0 0 0 50 50 A 14 9 0 0 0 30 95 H 85 a 4 5 0 0 0 0 -15 L 15 20 A 3 1 0 0 1 85 20 L 15 80">
+    </path>
+  </svg>
+</div>
 <style>
+  .hamburger-two {
+     
+  }
+  .hamburger-two .line{
+    transition: 3s;
+    stroke-dasharray: 70,47,70,36,69,600;
+  }
+  .hamburger-two:hover .line{
+    stroke-dasharray: 76,94,76,1000;
+    stroke-dashoffset: -544;
+  }
   .hamburger {
     outline: 1px solid transparent;
   }
