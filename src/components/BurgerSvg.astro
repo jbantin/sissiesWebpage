@@ -1,0 +1,37 @@
+<div class="mt-60 bg-green-700">
+  <svg class="hamburger" viewBox="0 0 100 100" width="64">
+    <rect class="line top" width="80" height="10" x="10" y="25"></rect>
+    <rect class="line middle" width="80" height="10" x="10" y="45"></rect>
+    <rect class="line bottom" width="80" height="10" x="10" y="65"></rect>
+  </svg>
+</div>
+<style>
+  .hamburger {
+    outline: 1px solid transparent;
+  }
+  
+  .hamburger .line {
+    transition:
+      rotate 300ms ease-in,
+      transform 0.3s ease-in 0.3s,
+      opacity 0ms 0.3s;
+    transform-origin: center;
+  }
+  .hamburger:hover .line {
+    transition:
+      transform 0.3s ease-in,
+      rotate 0.3s ease-in 0.3s,
+      opacity 0ms 0.3s;
+  }
+  .hamburger:hover .top {
+    transform: translateY(20%);
+    rotate: 45deg;
+  }
+  .hamburger:hover .bottom {
+    transform: translateY(-20%);
+    rotate: -45deg;
+  }
+  .hamburger:hover .middle {
+    opacity: 0;
+  }
+</style>
