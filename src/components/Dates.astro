@@ -1,24 +1,40 @@
+---
+import '../css/fonts.css'
+---
 <span id="dates" class="relative -top-32"></span>
 <div class="flex flex-col items-center">
     <span id="dates" class="relative -top-32"></span>
     <h1>Dates</h1>
 <h2>fr.29.11.2024 Wolfsburg</h2>
 <h2>sa.30.11.2024 Hannover</h2>
+</div>
 <style>
+    div {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 900;
+        letter-spacing: -0.07rem;
+    }
     h1,h2 {
         color:white;
         font-weight:bold;
-        padding:0 2rem;
+       
     }
     h1{
-        font-size:2.2rem;
-       margin:1rem;
-       text-decoration: underline;
+        font-size:2rem;
+        margin:0.5rem 0;
     }
     h2{
-        font-size:1.9rem;
+        font-size:1.5rem;
+    }
+    @media (min-width:768px) {
+        h2{
+            font-size:1.8rem;
+        }
+        h1{
+            font-size:2.2rem;
+        }
     }
 </style>
-</div>
+
 
 
