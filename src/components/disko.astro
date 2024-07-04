@@ -7,6 +7,7 @@ import splitPic from "../assets/img/sissies-smokeblow-payola-split.jpg";
 import juicePic from "../assets/img/the-juice-cover.jpeg";
 import protestLive from "../assets/audio/Nachtasyl_Protest.mp3";
 import fixed from "../assets/audio/Fixed.mp3"
+import "../css/fonts.css"
 ---
 
 <section class="releases flex overflow-x-hidden w-1/2 mt-24 ml-auto mr-auto md:w-1/3 xl:w-1/4 scroll-smooth snap-start snap-mandatory">
@@ -16,7 +17,7 @@ import fixed from "../assets/audio/Fixed.mp3"
       Cockroach Swing <a
         href="https://shop.soundsofsubterrania.com/en/product/sissies-cockroach-swing/"
         target="_blank"
-        class="self-right hover:scale-110 duration-500 mr-1 " >BUY</a
+        class="self-right hover:scale-125 duration-500 mr-1 " >BUY</a
       >
     </h1>
     <h3>Album</h3>
@@ -74,13 +75,17 @@ import fixed from "../assets/audio/Fixed.mp3"
     <a href="#fixed"><img src={fixedPic.src} alt=""></a>
 </section>
 <style>
+  .releases {
+    font-family: bebas;
+    letter-spacing: 0.04rem;
+  }
   h1 {
     font-size: 1.5rem;
   }
   h1,
   h3 {
     font-weight: 600;
-    letter-spacing: -0.06rem;
+    /* letter-spacing: -0.06rem; */
   }
   div {
     flex-basis: 100%;
@@ -119,6 +124,6 @@ import fixed from "../assets/audio/Fixed.mp3"
     transition-duration: 0.5s;
   }
   .nav a:hover{
-    scale: 1.2;
+    scale: 1.4;
   }
 </style>
