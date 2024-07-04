@@ -2,6 +2,7 @@
 import cockroachPic from "../assets/img/Sissies_CockroachSwing_soundsofsubterrania-600x600.jpeg";
 import protestLive from "../assets/audio/Nachtasyl_Protest.mp3";
 import cockroachVid from "../assets/cockroach-opti.mp4";
+import playerImage from "../assets/img/image.png"
 import "../css/fonts.css"
 ---
 <div class="font-['bebas'] tracking-wider">
@@ -14,7 +15,7 @@ import "../css/fonts.css"
     <h3 class="flex justify-between">Protest Live<audio controls src={protestLive}></audio></h3>
     <h1 class="mt-20 self-center">COCKROACH SWING</h1>
     
-    <video class="mt-4" controls src={cockroachVid} playsinline></video>
+    <video class="mt-4" controls src={cockroachVid} poster={playerImage.src}></video>
 </div>
 
 <style>
