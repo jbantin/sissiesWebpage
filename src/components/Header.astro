@@ -17,7 +17,7 @@ import "../css/fonts.css";
     <li><a href="/contact">Contact</a></li>
   </ul>
   <label class="md:hidden flex flex-col justify-center items-center relative">
-    <input class="peer hidden burger-check" type="checkbox" />
+    <input class="peer hidden burger-check" type="checkbox" id="checkbox-burger"/>
     <svg class="hamburger" fill="none" viewBox="0 0 100 100" width="32">
       <path
         class="line"
@@ -30,10 +30,10 @@ import "../css/fonts.css";
       <div
         class="nav transition-all duration-[1.5s] ease-in-out w-40 h-[70vh] bg-black flex flex-col justify-around absolute top-20 right-[-12rem] text-white peer-checked:-right-4"
       >
-        <a href="#news">News</a>
-        <a href="#dates">Dates</a>
+        <a href="#news" class="nav-mob">News</a>
+        <a href="#dates" class="nav-mob">Dates</a>
         <a href="/gal">Gallery</a>
-        <a href="#media">Media</a>
+        <a href="#media" class="nav-mob">Media</a>
         <a href="/releases">Releases</a>
         <a href="/contact">Contact</a>
       </div>
