@@ -6,9 +6,9 @@ import "../css/fonts.css";
 <div
   class="py-2 z-50 fixed left-0 right-0 top-0 h-28 bg-black flex justify-between px-4"
 >
-  <a href="/"><img src={logo.src} alt="sissies logo" class="h-full" /></a>
+  <a href="#top"><img src={logo.src} alt="sissies logo" class="h-full" /></a>
   <ul
-    class="mr-12 text-lg hidden text-white md:flex justify-around gap-3 items-center font-black font-['bebas'] tracking-wider"
+    class="mr-8 text-lg hidden text-white md:flex justify-around gap-3 items-center font-black font-['bebas'] tracking-wider"
   >
     <li><a href="#dates">Dates</a></li>
     <li><a href="/gal">Gallery</a></li>
@@ -40,6 +40,14 @@ import "../css/fonts.css";
     </svg>
   </label>
   <style>
+    li>a {
+      padding: 0.15rem;
+    }
+    li>a:hover {
+      Background-color: white;
+      color:black;
+      border-radius:0.5rem;
+    }
     .nav {
       padding: 0.5rem;
       text-align: right;
