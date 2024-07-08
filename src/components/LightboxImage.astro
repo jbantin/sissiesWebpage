@@ -11,7 +11,7 @@ const optimizedBackgroundImage = await getImage({src:pic})
     <div style={`background-image: url('${optimizedBackgroundImage.src}');`} class=" rounded-lg hover:scale-110 bg-cover bg-center aspect-square w-full rounded-x4 "></div>
     <input type="checkbox" name="" id="" class="peer hidden"/>
     
-    <img src={pic.src} alt="" class="z-50 fixed hidden peer-checked:block inset-0 max-w-full max-h-full object-contain peer-checked:w-full h-full top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2"/>
+    <img src={pic.src} alt="" class="z-50 fixed h-0 w-0 peer-checked:block inset-0 max-w-full max-h-full object-contain peer-checked:w-full peer-checked:h-full top-[50%] left-[50%] -translate-y-1/2 -translate-x-1/2 duration-700"/>
      
   </label>
 </div>
